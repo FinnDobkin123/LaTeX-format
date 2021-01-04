@@ -1,0 +1,58 @@
+\documentclass{article}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{tcolorbox}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{colortbl}
+\tcbuselibrary{skins}
+
+\newcolumntype{Y}{>{\raggedleft\arraybackslash}X}
+
+\tcbset{tab1/.style={fonttitle=\bfseries\large,fontupper=\normalsize\sffamily,
+colback=yellow!10!white,colframe=red!75!black,colbacktitle=Salmon!40!white,
+coltitle=black,center title,freelance,frame code={
+\foreach \n in {north east,north west,south east,south west}
+{\path [fill=red!75!black] (interior.\n) circle (3mm); };},}}
+
+\tcbset{tab2/.style={enhanced,fonttitle=\bfseries,fontupper=\normalsize\sffamily,
+colback=yellow!10!white,colframe=red!50!black,colbacktitle=Salmon!40!white,
+coltitle=black,center title}}
+
+\begin{document}
+
+\begin{tcolorbox}[tab2,tabularx={X||Y|Y|Y|Y||Y},title=RUCC 1-3,boxrule=0.5pt]
+Variable & 1st Quartile    & Median     & Mean    & 3rd Quartile  & NA's      \\\hline\hline
+GPE   & -1.2824  & -0.8793  &  -0.9623  &  -0.4360 & 1 \\\hline
+SGPE & -21.834 & -12.754 &  -14.481 &  -5.806 & 1 \\\hline
+Dropout Rate & 0.01010 & 0.0110 &  0.00581 &  0.01900 & 266 \\\hline
+Labor Force Participation & 0.6030 & 0.6460 &  0.6398    &  0.6833    & 2 \\\hline
+Mobility & 39.00 & 41.90 &  42.13 &  44.80 & 32 \\\hline
+Teen Births & 0.1130 & 0.1550 &  0.1544 &  0.1930& 32 \\\hline
+Government Expenditures & 1526 & 1956 & 2096 & 2511 & 2
+\end{tcolorbox}
+
+\begin{tcolorbox}[tab2,tabularx={X||Y|Y|Y|Y||Y},title=RUCC 4-6,boxrule=0.5pt]
+Variable & 1st Quartile    & Median     & Mean    & 3rd Quartile  & NA's      \\\hline\hline
+GPE   & -1.4627 & -0.8835  &  -1.7043 &  0.2813 & 0 \\\hline
+SGPE & -27.278 & -16.473 &  -29.155   &  -4.512 & 0 \\\hline
+Dropout Rate & 0.0015 & 0.002 &  0.0174 &  0.140 & 0 \\\hline
+Labor Force Participation & 0.5570 & 0.6040 &  0.5989 &  0.6430 & 0 \\\hline
+Mobility & 39.90 & 43.10 &  43.28 &  46.40 & 7 \\\hline
+Teen Births & 0.1300 & 0.1790 &  0.1774 &  0.2230 & 9 \\\hline
+Government Expenditures & 1540 & 1887 & 2090 & 2404 & 3
+\end{tcolorbox}
+
+
+\begin{tcolorbox}[tab2,tabularx={X||Y|Y|Y|Y||Y},title=RUCC 7-9,boxrule=0.5pt]
+Variable & 1st Quartile    & Median     & Mean    & 3rd Quartile  & NA's      \\\hline\hline
+GPE   & -1.5117 & -0.8375 &  -0.3942 &  -0.2025 & 0 \\\hline
+SGPE & -28.682 & -14.740 &  -4.017 &  -3.723 & 1 \\\hline
+Dropout Rate & 0.005 & 0.00718 &  0.09 &  0.31 & 183 \\\hline
+Labor Force Participation & 0.5430 & 0.5960 &  0.5868 &  0.6430 & 5 \\\hline
+Mobility & 41.00 & 44.90 &  45.65 &  50.30 & 336 \\\hline
+Teen Births & 0.1180 & 0.1610 &  0.1673 &  0.2140 & 336 \\\hline
+Government Expenditures & 1462 & 1983 & 2283 & 2640 & 6
+\end{tcolorbox}
+
+
+\end{document}
