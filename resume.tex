@@ -1,0 +1,236 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------Font----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+
+
+
+\begin{document}
+
+%----------Heading----------
+
+
+\begin{center}
+    \textbf{\Huge \scshape Finn Dobkin} \\ \vspace{1pt}
+    \small 949-554-9885 $|$ \href{mailto:x@x.com}{\underline{fd9716a@american.edu}} $|$ 
+    \href{https://linkedin.com/in/...}{\underline{https://www.linkedin.com/in/finn-dobkin-1a473311b/}} $|$
+    \href{https://github.com/...}{\underline{github.com/Finn-Dobkin}}
+\end{center}
+
+
+%-----------Education-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {American University School of Public Affairs}{Washington, DC}
+      {Masters of Public Policy in Public Finance, Certificate in Data Science }{Aug. 2020 -- May 2022}
+    \resumeSubheading
+      {University of Puget Sound}{Tacoma, WA}
+      {Bachelors of Arts in Economics}{Aug. 2015 -- May 2019}
+  \resumeSubHeadingListEnd
+
+
+%-----------Experience-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+ \resumeSubheading
+      {Policy Assistant}{Dcember 2020 -- present}
+      {Enterprise Community Partners}{Washington, DC}
+      \resumeItemListStart
+        \resumeItem{Met with HHS, SSA, and EOP officials to discuss proposed revisions to federal budget}
+        \resumeItem{Attended training seminars on topics including Current Resolutions, Appropriation Law, and regulatory analysis}
+        \resumeItem{Drafted white paper on the Social Security minimum benefit, including legislative history, analysis of proposals, and barriers to funding}
+        \resumeItem{Conducted original analysis on  of ACF Public Assistance Reporting Information System and provided recommendations for improvements}
+      \resumeItemListEnd
+      
+
+    \resumeSubheading
+      {Graduate Trainee}{May 2020 -- December 2020}
+      {Office of Management and Budget}{Washington, DC}
+      \resumeItemListStart
+        \resumeItem{Met with HHS, SSA, and EOP officials to discuss proposed revisions to federal budget}
+        \resumeItem{Attended training seminars on topics including Current Resolutions, Appropriation Law, and regulatory analysis}
+        \resumeItem{Drafted white paper on the Social Security minimum benefit, including legislative history, analysis of proposals, and barriers to funding}
+        \resumeItem{Conducted original analysis on  of ACF Public Assistance Reporting Information System and provided recommendations for improvements}
+      \resumeItemListEnd
+      
+
+
+%-------------------------------------------
+
+    \resumeSubheading
+      {Graduate Fellow}{June 2020 -- Present}
+      {American University Center for Data Science}{Washington, DC}
+      \resumeItemListStart
+        \resumeItem{Coded three thousand congressional bill sections based on policy topic for use in training machine learning model}
+        \resumeItem{Used R rvest package to scrape html files off of the Federal Reserve and Bureau of Labor Statistics websites and tidy into functional datasets}
+        \resumeItem{Under the consultation of faculty, used quantile regression methods to model county-level spatial response of poverty to changes in economic growth across rural to urban areas}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Policy Aide}{May 2019 -- May 2020}
+      {City of Stockton Mayor's Office}{Stockton, CA}
+      \resumeItemListStart
+        \resumeItem{Collaborated with Stanford University Engineering faculty to produce the Stockton Green Economy Analysis, providing city leaders with analysis of regional greenhouse emissions, labor force, and commuting, as well as strategies to promote green workforce and urban development}
+        \resumeItem{Recruited community partners, co-wrote and was awarded Blue Shield of California Grant to provide vouchers for income eligible, essential workers during COVID-19 pandemic}
+        \resumeItem{Assisted mayoral advisors with ad hoc research related to higher education, childcare, and workforce development }
+        \resumeItem{Used R shiny to display changes over time in the economic and social status of women in San Joaquin County 
+}
+      \resumeItemListEnd
+
+\resumeSubheading
+      {Research Assistant}{September 2017 -- September 2018}
+      {Earth Economics}{Tacoma, WA}
+      \resumeItemListStart
+        \resumeItem{Translated primary source documents on government assessments of the impact of US spraying operations on public health in rural Colombia}
+        \resumeItem{Used Excel to develop a cost-benefit model on the economic costs of environmental impacts of hydroelectric projects on Eastern Washington}
+        \resumeItem{Summarized technical literature on the public health impacts of agricultural run-off in low-income areas}
+        \resumeItem{Provided administrative support by directing phone calls, discussing services with clients, and drafting emails}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------Projects-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Green Economy Analysis: Opportunities for Stockton} $|$ \emph{City Systems}}{September 2019 -- May 2020}
+          \resumeItemListStart
+            \resumeItem{Between late 2019 and early 2020, I provided research support and community working group facilitation for the Stockton Green Economy Analysis. During this project, I collaborated with Stanford Civil Engineering faculty members and Stockton community leaders to develop strategies to reduce greenhouse gas emissions, grow workforce development opportunities, and connect private sector entities with funding vehicles for the twelfth largest city in California.}
+          \resumeItemListEnd
+          
+        \resumeProjectHeading
+          {\textbf{Oral Health for All Campaign} $|$ \emph{Families USA}}{October 2020 -- February 2021}
+          \resumeItemListStart
+            \resumeItem{Between late 2019 and early 2020, I provided research support and community working group facilitation for the Stockton Green Economy Analysis. During this project, I collaborated with Stanford Civil Engineering faculty members and Stockton community leaders to develop strategies to reduce greenhouse gas emissions, grow workforce development opportunities, and connect private sector entities with funding vehicles for the twelfth largest city in California.}
+          \resumeItemListEnd
+    
+    \resumeSubHeadingListEnd
+
+%-----------Publications-----------
+\section{Publications}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Bolstering Broadband Infrastructure} $|$ \emph{Santa Barbara Independent}}
+ 
+      \resumeProjectHeading
+          {\textbf{Coronavirus Aid Prioritizes Big Banks. That’s a Problem for Rural America} $|$ \emph{Center for American Progress}}
+          
+       \resumeProjectHeading
+          {\textbf{Coronavirus highlights the need to correct the state’s philanthropic inequality} $|$ \emph{CalMatters}}
+          
+        \resumeProjectHeading
+          {\textbf{Mass Exodus of Workers Due to Lousy Housing Market} $|$ \emph{Santa Barbara Independent}}
+    
+    \resumeSubHeadingListEnd
+
+
+
+%
+%-----------Technical Skills-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: R, Python, SQL, Stata, \LaTeX} \\
+     \textbf{Libraries}{: pandas, NumPy, Matplotlib} \\
+     \textbf{Research skills}{: Regression modeling, data cleaning, text analysis, web scraping, data visualization, axial coding}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
+
+ 
